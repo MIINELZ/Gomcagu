@@ -1,2 +1,0 @@
-# Gomcagu
-IMport server
