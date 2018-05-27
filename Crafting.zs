@@ -12,6 +12,25 @@
 
 // ================================================================================
 //#MARKER REMOVE
+recipes.remove(<IC2:itemArmorQuantumHelmet>);
+recipes.remove(<harvestcraft:heartybreakfastItem>);
+recipes.remove(<harvestcraft:delightedmealItem>);
+recipes.remove(<harvestcraft:epicbaconItem>);
+recipes.remove(<DCsAppleMilk:defeatedcrow.cocktail2:6>);
+recipes.remove(<DCsAppleMilk:defeatedcrow.cocktail2:3>);
+recipes.remove(<IC2:itemPlates>);
+recipes.remove(<IC2:itemPlates:1>);
+recipes.remove(<IC2:itemPlates:2>);
+recipes.remove(<IC2:itemPlates:3>);
+recipes.remove(<IC2:itemPlates:4>);
+recipes.remove(<IC2:itemPlates:5>);
+recipes.remove(<IC2:itemPlates:6>);
+recipes.remove(<IC2:upgradeModule>);
+recipes.remove(<IC2:blockReactorChamber>);
+recipes.remove(<IC2:reactorPlating>);
+recipes.remove(<IC2:reactorPlatingExplosive>);
+recipes.remove(<IC2:blockKineticGenerator:1>);
+recipes.remove(<DCsAppleMilk:defeatedcrow.cocktail2:2>);
 recipes.remove(<DCsAppleMilk:defeatedcrow.chocolateGift>);
 recipes.remove(<DCsAppleMilk:defeatedcrow.chocolateGift:1>);
 recipes.remove(<CarpentersBlocks:itemCarpentersChisel>);
@@ -75,11 +94,28 @@ mods.tconstruct.Smeltery.removeMelting(<minecraft:golden_boots>);
 
 // ================================================================================
 //#MARKER ADD SHAPELESS
+recipes.addShapeless(<harvestcraft:heartybreakfastItem>, [<ore:listAllmeatcooked>, <IC2:itemShardIridium>, <ore:foodFries>, <ore:foodBlockOrangejuice>]);
+recipes.addShapeless(<harvestcraft:delightedmealItem>, [<ore:listAllmeatcooked>, <ore:foodFries>, <IC2:itemShardIridium>, <ore:foodBlockOrangejuice>, <ore:foodFriedchicken>]);
+recipes.addShapeless(<harvestcraft:epicbaconItem>, [<ore:dyeBrown>, <ore:listAllmeatcooked>, <IC2:itemShardIridium>, <ore:gemLapis>, <ore:dyeMagenta>, <ore:dye>, <ore:dyeGreen>, <ore:dyeRed>, <ore:dyeLightBlue>]);
+recipes.addShapeless(<DCsAppleMilk:defeatedcrow.cocktail2:6>, [<ore:dyeBrown>, <IC2:itemShardIridium>, <ore:bottleBrandy>, <ore:listAllsugar>]);
+recipes.addShapeless(<DCsAppleMilk:defeatedcrow.cocktail2:3>, [<ore:bottleVodka>, <ore:listAllsugar>, <ore:foodBlockOrangejuice>, <IC2:itemShardIridium>]);
+recipes.addShapeless(<IC2:reactorPlatingExplosive>, [<IC2:reactorPlating>, <IC2:itemPartAlloy>, <IC2:itemPartAlloy>, <ore:plateLead>]);
+recipes.addShapeless(<IC2:reactorPlating>, [<ore:plateLead>, <IC2:itemPartAlloy>]);
 recipes.addShapeless(<minecraft:light_weighted_pressure_plate>, [<ore:plateGold>, <ore:plateGold>]);
 recipes.addShapeless(<minecraft:heavy_weighted_pressure_plate>, [<ore:plateIron>, <ore:plateIron>]);
+mods.tconstruct.Casting.addTableRecipe(<IC2:itemPlates>, <liquid:copper.molten> * 288, null, false, 200);
+mods.tconstruct.Casting.addTableRecipe(<IC2:itemPlates:2>, <liquid:bronze.molten> * 288, null, false, 200);
+mods.tconstruct.Casting.addTableRecipe(<IC2:itemPlates:3>, <liquid:gold.molten> * 288, null, false, 200);
+mods.tconstruct.Casting.addTableRecipe(<IC2:itemPlates:4>, <liquid:iron.molten> * 288, null, false, 200);
+mods.tconstruct.Casting.addTableRecipe(<IC2:itemPlates:5>, <liquid:steel.molten> * 288, null, false, 200);
+mods.tconstruct.Casting.addTableRecipe(<IC2:itemPlates:1>, <liquid:tin.molten> * 288, null, false, 200);
 
 // ================================================================================
 //#MARKER ADD SHAPED
+recipes.addShaped(<IC2:upgradeModule>, [[null, <IC2:itemCable:6>, null], [<IC2:reactorCoolantSimple>, <IC2:reactorCoolantTriple>, <IC2:reactorCoolantSimple>], [<IC2:itemCable:3>, <IC2:itemToolMEter>, <IC2:itemCable:3>]]);
+recipes.addShaped(<IC2:blockReactorChamber>, [[null, <IC2:reactorPlatingExplosive>, null], [<IC2:reactorPlatingExplosive>, <IC2:blockMachine>, <IC2:reactorPlatingExplosive>], [null, <IC2:reactorPlatingExplosive>, null]]);
+recipes.addShaped(<IC2:blockKineticGenerator:1>, [[<IC2:itemPartAlloy>, <IC2:itemPartAlloy>, <IC2:itemRecipePart:12>], [<IC2:itemPartAlloy>, <IC2:itemRecipePart:6>, <ore:craftingToolForgeHammer>], [<IC2:itemCable:6>, <IC2:blockMachine3>, <IC2:itemPartAlloy>]]);
+recipes.addShaped(<IC2:blockKineticGenerator>, [[<ore:craftingToolForgeHammer>.reuse(), <IC2:itemRecipePart:10>, <ore:circuitAdvanced>], [<IC2:itemRecipePart:10>, <IC2:blockKineticGenerator:1>, <IC2:itemRecipePart:10>], [<ore:circuitAdvanced>, <IC2:itemRecipePart:10>, <IC2:itemRecipePart:5>]]);
 recipes.addShaped(<DCsAppleMilk:defeatedcrow.fossilCannon>, [[<IC2:reactorPlatingExplosive>, <IC2:reactorPlatingExplosive>, <IC2:itemPlutonium>], [<DCsAppleMilk:defeatedcrow.fossilScale>, <minecraft:nether_star>, <IC2:reactorPlatingExplosive>], [<DCsAppleMilk:defeatedcrow.yuzuGatling>, <DCsAppleMilk:defeatedcrow.fossilScale>, <IC2:reactorPlatingExplosive>]]);
 recipes.addShaped(<DCsAppleMilk:defeatedcrow.yuzuGatling>, [[null, <IC2:itemRecipePart>, <minecraft:dispenser>], [null, <IC2:reactorCoolantSimple:1>, <IC2:itemRecipePart>], [<IC2:itemRecipePart:2>, <IC2:itemBatChargeAdv:26>, null]]);
 recipes.addShaped(<minecraft:beacon>, [[<appliedenergistics2:tile.BlockQuartzLamp>, <appliedenergistics2:tile.BlockQuartzLamp>, <appliedenergistics2:tile.BlockQuartzLamp>], [<appliedenergistics2:tile.BlockQuartzLamp>, <minecraft:nether_star>, <appliedenergistics2:tile.BlockQuartzLamp>], [<TConstruct:decoration.multibrickmetal:7>, <TConstruct:decoration.multibrick:7>, <TConstruct:decoration.multibrickmetal:5>]]);
@@ -98,4 +134,15 @@ recipes.addShaped(<minecraft:torch> * 5, [[<ore:stickWood>, <minecraft:coal:*>, 
 recipes.addShaped(<minecraft:golden_rail>, [[<ore:ingotGold>, <minecraft:rail>, <ore:ingotGold>], [<ore:dustRedstone>, <ore:craftingToolForgeHammer>, <ore:dustRedstone>]]);
 recipes.addShaped(<minecraft:rail> * 6, [[<ore:ingotIron>, null, <ore:ingotIron>], [<ore:ingotIron>, <ore:stickWood>, <ore:ingotIron>], [<ore:ingotIron>, <ore:craftingToolForgeHammer>, <ore:ingotIron>]]);
 recipes.addShaped(<minecraft:dispenser>, [[<minecraft:stonebrick>, <minecraft:stonebrick>, <minecraft:stonebrick>], [<minecraft:stonebrick>, <BambooMod:bamboobow>, <minecraft:stonebrick>], [<minecraft:stonebrick>, <Thaumcraft:ItemResource:1>, <minecraft:stonebrick>]]);
-
+#TC HELMET
+mods.thaumcraft.Research.addResearch("QUANTUMHELMET", "ELDRITCH", "tutamen 100, iter 200, perfodio 100, herba 200, vitium 100", 3, 2, 8, <IC2:itemArmorQuantumHelmet>);
+game.setLocalization("zh_CN", "tc.research_name.QUANTUMHELMET", "\u90aa\u6076\u6df1\u9083\u7684\u773c\u795e");
+game.setLocalization("zh_CN", "tc.research_text.QUANTUMHELMET", "[IC2] \u672a\u77e5\u9886\u57df");
+mods.thaumcraft.Research.addPage("QUANTUMHELMET", "derp.research_page.QUANTUMHELMET");
+game.setLocalization("zh_CN", "derp.research_page.QUANTUMHELMET", "\u5728\u4f60\u6f2b\u957f\u7684\u9b54\u6cd5\u7814\u7a76\u4e2d\uff0c\u4f60\u5df2\u7ecf\u8d8a\u53d1\u8d8a\u6df1\u5165\u7684\u4e86\u89e3\u8fd9\u4e2a\u6697\u9ed1\u7684\u77e5\u8bc6\u4e4b\u6d77\u4e2d,\u4f46\u6709\u4e00\u65e5\u4f60\u53d1\u73b0\u4e86\u4e0e\u4f17\u4e0d\u540c\u7684\u4e1c\u897f,\u8fd9\u662f\u4e00\u4e2a\u4f60\u4ee5\u524d\u6ca1\u6709\u89c1\u8fc7\u7684<BR>\u79d1\u6280\u4ea7\u7269<BR>,\u5b83\u4eec\u7684\u6784\u6210\u4e0e\u4f60\u8eab\u4e0a\u7684\u5e03\u6599\u5b8c\u5168\u4e0d\u4e00,\u4f60\u80fd\u5f88\u6e05\u695a\u7684\u611f\u89c9\u5230\u8fd9\u4e2a\u5934\u76d4\u6563\u53d1\u51fa\u6765\u7684\u90aa\u6076\u76ee\u5149,\u4eff\u4f5b\u5c31\u8981\u6df1\u5165\u4f60\u7684\u610f\u8bc6,\u4f46\u4f60\u51b3\u5b9a\u8fd8\u662f\u5192\u9669\u4e00\u8bd5");
+mods.thaumcraft.Research.addPrereq("QUANTUMHELMET", "ROD_primal_staff", false);
+mods.thaumcraft.Warp.addToResearch("QUANTUMHELMET", 5);
+mods.thaumcraft.Infusion.addRecipe("QUANTUMHELMET", <IC2:itemArmorNanoHelmet:27>, [<Thaumcraft:ItemHelmetVoidFortress>, <IC2:itemNightvisionGoggles:27>, <IC2:itemBatLamaCrystal>, <IC2:itemSolarHelmet>, <Thaumcraft:FocusPrimal>, <IC2:itemPartIridium>, <IC2:itemPartIridium>, <IC2:itemPartIridium>, <IC2:itemPartIridium>, <IC2:itemPartIridium>], "auram 48, potentia 128, permutatio 128, tutamen 80, iter 64, motus 128", <IC2:itemArmorQuantumHelmet:27>, 15);
+mods.thaumcraft.Research.addInfusionPage("QUANTUMHELMET", <IC2:itemArmorQuantumHelmet:27>);
+mods.thaumcraft.Research.refreshResearchRecipe("QUANTUMHELMET");
+#TC CHESTPLATE
