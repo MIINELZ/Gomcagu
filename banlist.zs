@@ -81,6 +81,7 @@ mods.thaumcraft.Research.removeResearch("LIQUIDDEATH");
 mods.thaumcraft.Research.removeResearch("BOTTLETAINT");
 mods.thaumcraft.Research.removeResearch("PRIMALARROW");
 mods.thaumcraft.Research.removeResearch("BONEBOW");
+recipes.remove(<IguanaTweaksTConstruct:clayBucketUnfired>);
 
 // ================================================================================
 //#MARKER REMOVE SHAPELESS
