@@ -1,0 +1,11 @@
+mods.thaumcraft.Research.addResearch("PEARL", "ELDRITCH", "cognitio 200, sensus 200, venenum 200, vitium 200, fames 200, lucrum 200", 1, 2, 8, <Thaumcraft:ItemEldritchObject:3>);
+game.setLocalization("zh_CN", "tc.research_name.PEARL", "\u5143\u59cb\u6dec\u70bc\u672f");
+game.setLocalization("zh_CN", "tc.research_text.PEARL", "\u5143\u59cb\u7684\u953b\u9020\u529b\u91cf");
+mods.thaumcraft.Research.addPage("PEARL", "derp.research_page.PEARL");
+game.setLocalization("zh_CN", "derp.research_page.PEARL", "\u6574\u65e5\u5fd9\u4e8e\u5954\u6ce2\u5bfb\u627e\u90aa\u672f\u796d\u575b,\u7531\u4e8e\u90aa\u672f\u796d\u575b\u7684\u51fa\u73b0\u6570\u91cf\u5b9e\u5728\u662f\u5c11,\u4f60\u53c8\u4e0d\u60f3\u4e0e\u90aa\u672f\u5b88\u536b\u4eec\u6218\u6597\u3002<BR>\u501f\u52a9\u4f60\u5f3a\u5927\u7684\u9b54\u6cd5\u529b\u91cf,\u4f60\u7814\u7a76\u51fa\u4e00\u79cd\u5b89\u5168\u800c\u53c8\u5feb\u6377\u7684\u83b7\u53d6\u5143\u59cb\u73cd\u73e0\u7684\u65b9\u6cd5<BR>\u5f80\u865a\u7a7a\u91d1\u5c5e\u7c92\u4e2d\u6ce8\u5165\u5404\u79cd\u5143\u7d20\u7ec4\u6210\u7684\u5143\u7d20\u4e4b\u529b\uff0c\u6765\u589e\u5e45\u91d1\u5c5e\u7684\u9b54\u529b,\u5728ordo\u8981\u7d20\u548cpraecantatio\u8981\u7d20\u7684\u5e2e\u52a9\u4e0b,\u4ee4\u865a\u7a7a\u7c92\u8f6c\u5316\u4e3a\u5143\u59cb\u73cd\u73e0.");
+mods.thaumcraft.Research.addPrereq("PEARL", "ENTEROUTER", false);
+mods.thaumcraft.Warp.addToResearch("PEARL", 5);
+mods.thaumcraft.Infusion.addRecipe("PEARL", <Thaumcraft:ItemNugget:7>, [<Thaumcraft:blockCrystal>, <Thaumcraft:blockCrystal:1>, <Thaumcraft:blockCrystal:3>, <Thaumcraft:blockCrystal:2>, <Thaumcraft:blockCrystal:4>, <Thaumcraft:blockCrystal:5>, <Thaumcraft:ItemResource:15>, <Thaumcraft:ItemEldritchObject>, <Thaumcraft:ItemEldritchObject>, <Thaumcraft:ItemEldritchObject>, <Thaumcraft:ItemEldritchObject>, <Thaumcraft:FocusPrimal>], "auram 48, potentia 128, permutatio 128, alienis 80, spiritus 64, sano 128, vacuos 128", <Thaumcraft:ItemEldritchObject:3>, 15);
+mods.thaumcraft.Research.addInfusionPage("PEARL", <Thaumcraft:ItemEldritchObject:3>);
+mods.thaumcraft.Research.refreshResearchRecipe("PEARL");
+mods.thaumcraft.Research.moveResearch("PEARL", "ELDRITCH", -5, 6);
