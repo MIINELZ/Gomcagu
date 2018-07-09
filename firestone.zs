@@ -1,0 +1,11 @@
+mods.thaumcraft.Research.addResearch("FIRESTONE", "ARTIFICE", "cognitio 200, sensus 200, lux 200, ignis 200, fames 200, lucrum 200", 1, 2, 8, <Railcraft:firestone.refined>);
+game.setLocalization("zh_CN", "tc.research_name.FIRESTONE", "\u706b\u77f3\u7cbe\u70bc\u672f");
+game.setLocalization("zh_CN", "tc.research_text.FIRESTONE", "[RC]\u592a\u9633\u964d\u4e34");
+mods.thaumcraft.Research.addPage("FIRESTONE", "derp.research_page.FIRESTONE");
+game.setLocalization("zh_CN", "derp.research_page.FIRESTONE", "\u706b\u77f3\u4e00\u76f4\u662f\u6781\u5176\u7a00\u5c11\u7684\u8d44\u6e90,\u7edd\u5927\u90e8\u5206\u7684\u5192\u9669\u5bb6\u4e3a\u4e86\u706b\u77f3\u5954\u8d74\u4e0b\u754c,\u7136\u800c\u5b83\u4eec\u751f\u6210\u5728\u5ca9\u6d46\u7684\u5e95\u90e8,\u800c\u4e14\u5373\u4f7f\u62ff\u5728\u624b\u4e0a\u4e5f\u6709\u6781\u5927\u7684\u5371\u9669,\u6240\u4ee5\u4e07\u80fd\u7684\u795e\u79d8\u4f7f\u4eec,\u4f7f\u7528\u5b83\u4eec\u7684\u9b54\u6cd5\u80fd\u91cf\u4ece\u6750\u6599\u4e2d\u7cbe\u70bc\u51fa\u706b\u77f3,\u4f46\u8fd9\u4e2a\u8fc7\u7a0b\u65e0\u7591\u4f1a\u6bd4\u5192\u9669\u53bb\u91c7\u96c6\u5b83\u4eec\u8981\u7b80\u5355\u7684\u591a.");
+mods.thaumcraft.Research.addPrereq("FIRESTONE", "INFERNALFURNACE", false);
+mods.thaumcraft.Warp.addToResearch("FIRESTONE", 6);
+mods.thaumcraft.Infusion.addRecipe("FIRESTONE", <Thaumcraft:FocusHellbat>, [<Railcraft:part.turbine.rotor>, <Thaumcraft:FocusFire>, <Railcraft:part.turbine.rotor>, <Thaumcraft:ItemBucketDeath>, <Thaumcraft:ItemBucketPure>, <Thaumcraft:blockWoodenDevice:1>, <Railcraft:part.turbine.disk>, <Thaumcraft:blockTube:7>,], "ignis 128, potentia 128, permutatio 128, vitreus 80, ordo 64", <Railcraft:firestone.raw>, 17);
+mods.thaumcraft.Research.addInfusionPage("FIRESTONE", <Railcraft:firestone.raw>);
+mods.thaumcraft.Research.refreshResearchRecipe("FIRESTONE");
+mods.thaumcraft.Research.moveResearch("FIRESTONE", "ARTIFICE", -7, -1);
